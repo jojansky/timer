@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Timer Application</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="timer-container">
-    <input type="text" id="time-input" placeholder="Enter time as hh:mm">
-    <button id="start-btn">Start</button>
-    <button id="stop-btn" style="display: none;">Stop</button>
-    <button id="reset-btn" style="display: none;">Reset</button>
-    <div id="timer-display">00:00</div>
+<div class="timer-display" id="timer-display">00:00</div>
+<div class="timer-controls">
+    <div class="container">
+        <input type="text" id="time-input" placeholder="Enter time as hh:mm">
+        <button id="start-btn" class="button-primary">Start</button>
+        <button id="stop-btn" class="button-primary" style="display: none;">Stop</button>
+        <button id="reset-btn" class="button-primary" style="display: none;">Reset</button>
+    </div>
 </div>
 
 <audio id="alarm">
